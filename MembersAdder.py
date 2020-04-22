@@ -23,7 +23,7 @@ if not client.is_user_authorized():
     client.sign_in(phone, input('Enter the code: '))
 
 users = []
-with open(r"C:\Users\R15H4B\Desktop\myscrappermachine\members5.csv", encoding='UTF-8') as f:
+with open(r"members.csv", encoding='UTF-8') as f:
     rows = csv.reader(f,delimiter=",",lineterminator="\n")
     next(rows, None)
     for row in rows:
